@@ -1,0 +1,15 @@
+# Fallback subtasks when configs/prompts/subtasks.yaml is missing or invalid
+# Schema matches subtasks.yaml 'items' entries
+items:
+  - id_suffix: research
+    type: research
+    description: "사용자 요청에 관련된 정보 조사"
+    content: "다음 주제에 대한 정보를 조사하세요: {user_request}"
+    priority: medium
+  - id_suffix: analysis
+    type: analysis
+    description: "정보 분석 및 인사이트 도출"
+    content: "조사된 정보를 분석하고 핵심 인사이트를 도출하세요"
+    priority: medium
+    depends_on:
+      - research

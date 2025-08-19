@@ -1,0 +1,16 @@
+# configs/ui/prompt_options.yaml
+# Prompt UI selectable options and defaults
+basic:
+  domains: ["일반", "마케팅", "개발", "디자인", "교육", "비즈니스"]
+  tones: ["전문적", "친근한", "격식있는", "창의적", "간결한"]
+  output_formats: ["일반 텍스트", "목록", "표", "에세이", "코드"]
+  examples_default: true
+advanced:
+  domains: ["일반", "마케팅", "개발", "디자인", "교육", "비즈니스"]
+  complexity_options: ["간단", "보통", "복잡", "매우 복잡"]
+  creativity:
+    min: 0
+    max: 10
+    default: 5
+  examples_default: true
+  include_context_default: false
